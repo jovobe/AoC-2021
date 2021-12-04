@@ -1,6 +1,7 @@
 import * as fs from 'fs';
+import path from 'path';
 
-const input = fs.readFileSync('input.txt','utf8');
+const input = fs.readFileSync(path.resolve(__dirname, 'input.txt'),'utf8');
 const signals = input.split('\n').map(value => Number(value));
 
 // part 1
